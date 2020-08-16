@@ -4,8 +4,8 @@
 </head>
     <body>
 <?php  
-$mylogin = '5';
-$mypass = '5';
+$mylogin = 'admin';
+$mypass = 'admin';
 if(isset($_POST['btn_auth']))
 {
 if (($_POST['login'] == $mylogin) && ($_POST['password'] == $mypass))
