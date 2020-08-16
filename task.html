@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="cs.css">
+    <script type="text/javascript" src="cs.js"></script>
+
+</head>
+
+<body link="#8c459b" style="font-family:'Comic Sans MS', cursive">
+    <h1 class="fig">Студенческий портал</h1>
+    <h2>
+        <SCRIPT language="JavaScript">
+
+            function set_cookie(name, value, expires_year, expires_month, expires_day, path, domain, secure) {
+                var cookie_string = name + "=" + escape(value);
+
+                if (expires_year) {
+                    var expires = new Date(expires_year, expires_month, expires_day);
+                    cookie_string += "; expires=" + expires.toGMTString();
+                }
+
+                if (path)
+                    cookie_string += "; path=" + escape(path);
+
+                if (domain)
+                    cookie_string += "; domain=" + escape(domain);
+
+                if (secure)
+                    cookie_string += "; secure";
+
+                document.cookie = cookie_string;
+
+            }
+
+            function delete_cookie(cookie_name) {
+                var cookie_date = new Date();  //Ткущая дата и время
+                cookie_date.setTime(cookie_date.getTime() - 1);
+                document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+            }
+
+            function get_cookie(cookie_name) {
+                var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+
+                if (results)
+                    return (unescape(results[2]));
+                else
+                    return null;
+            }
+
+            if (!get_cookie("username")) {
+                var username = prompt("Пожалуйста, ведите Ваше имя", "");
+
+                if (username) {
+                    var current_date = new Date;
+                    var cookie_year = current_date.getFullYear() + 1;
+                    var cookie_month = current_date.getMonth();
+                    var cookie_day = current_date.getDate();
+                    set_cookie("username", username, cookie_year, cookie_month, cookie_day);
+                    document.location.reload();
+                }
+            }
+            else {
+                var username = get_cookie("username");
+                document.write("Доброго времени суток, " + username + ", добро пожаловать на сайт!");
+                document.write("<br><a href=\"javascript:delete_cookie('username'); document.location.reload( );\">Меня зовут не " + username + ". Сменить имя</a>");
+            }
+
+            // -->
+        </SCRIPT>
+    </h2>
+    <p class="fig">
+
+
+        <p></p>
+        <h2>Постановка задачи:</h2>
+
+        <h3>Цели проекта:</h3>
+        <p>Создать Веб-Блог, который позволяет размещать учебные статьи, материалы для студентов. С возможностью авторизации для администратора, подключенной БД, возможностью комментировать записи, фиксировать количество просмотров, выводить топ читаемых статей, постраничной навигацией, сортировкой по количеству просмотров, вывод новейших комментариев и записей, сортировкой записей по категориям и пр..</p>
+
+        <h3> Ожидаемые результаты:</h3>
+        <p>Разработанное и размещенное на веб-хостинге sprinthost клиент-серверное веб-приложение, которое будет выполнять функции студенческого Веб-сервиса, выступающего в роли полезного ресурса с учебными статьями и материалами для студентов. Данное приложение способно выступать так же в роли информационного портала для уведомления студентов о возможных стажировках/практиках и последних новостях из мира информационных технологий. <p>
+        
+        <h3> Задачи, которые необходимо решить:</h3>
+        <p>Создание базы данных и логики администрирования. 
+            Создание веб-интерфейса, позволяющего пользователю просматривать, комментировать статьи и записи,производить навигацию по страницам, категориям, просматривать новейшие записи и комментарии, а администраторам заходить в панель администрирования и модерировать любую информацию и содержание Веб-сайта, создавать новые записи, удалять или редактировать существующие.</p>
+
+            <h2>Методы решения задач:</h2>
+            <p>Проектирование Веб-Блогов: авторизация, логика взаимодействия с Базой Данных MySql, phpmyadmin, создание  удобного интерфейса для клиента.</p>
+
+            <h2>Инструментальные средства, которые предполагается использовать для разработки приложения:</h2>
+            <p>Основная логика приложения будет выполнена на языке PHP, а разметка веб-страниц с использованием HTML и CSS.Запросы в базу данных MySQL </p>
+
+            <h2>Описание планируемого функционала приложения и интерфейса пользователя:</h2>
+            <p>Для пользователя: возможность просмотра, оставления коммментариев к записям и другим учебным материалам. Реализация в виде полноценного  удобного интерфейса Веб-Портала.</p>
+            <p>Для администратора: возможность модерировать сайт, управление собранными данными, записями  и содержимым сайта.</p>
+
+            <h2>Автор проекта:</h2>
+            <p>Студент Неровный Ян Сергеевич, 2 курса ФКН, 3 группы.</p>
+            <h2>Cвязь со мной:</h2>
+             <p> Email: yan.krivoy@gmail.com </p>
+			 <p> <a href="https://vk.com/exciting_opportunities"> Вконтакте  </a> </p>
+             <p> <a href="https://www.linkedin.com/in/yan-nerovniy-5a62501b2/"> Linkedin  </a> </p>
+             <p> <a href="https://github.com/exciting-opportunities"> GitHub  </a> </p>
+            
+               <center><br>Воронеж, ВГУ, 2020г.</center>
+                
+            </p>
+
+            </ul>
+            </div>
+
+        
+</body>
+
+</html>

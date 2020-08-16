@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-weight: bold;
+    
+}
+
+.body{
+    height:100vh;
+    font-family:Montserrat, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.form{
+   
+    display:flex;
+    flex-direction:column;
+    width: 400px;
+}
+.input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    cursor:pointer;
+}
+
+.mydiv{
+    cursor:pointer;
+    height:100vh;
+    font-family:Montserrat, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    
+}
