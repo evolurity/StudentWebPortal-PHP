@@ -7,9 +7,9 @@ $config = array(
     'url' => 'http://f0451479.xsph.ru/task.html',
     'db' => array(
         'server' => 'localhost',
-        'username' => 'f0451479_csf_yan',
-        'password' => 'admin',
-        'name' => 'f0451479_csf_yan'
+        'username' => 'admin',
+        'password' => '123',
+        'name' => 'admin'
 
     )
 );
